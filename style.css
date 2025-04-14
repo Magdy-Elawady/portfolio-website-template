@@ -1,0 +1,530 @@
+html{
+  scroll-padding: 50px;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* ------------ navbar ------------ */
+.navbar {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+nav li {
+  position: relative;
+}
+
+nav li::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  transition: 0.3s;
+}
+
+nav li:hover::before {
+  width: 60%;
+}
+
+/* ------------ main ------------ */
+
+main {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url(images/main-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h1 {
+  font-size: 72px;
+}
+
+
+main h2::after{
+  content: '';
+  animation-name: typing;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+
+
+@keyframes typing {
+  0%{
+    content: 'D|';
+  }
+  2%{
+    content: 'De|';
+  }
+  4%{
+    content: 'Des|';
+  }
+  6%{
+    content: 'Desi|';
+  }
+  8%{
+    content: 'Design|';
+  }
+  10%{
+    content: 'Designer|';
+  }
+  12%{
+    content: 'Designer|';
+  }
+  14%{
+    content: 'Designer|';
+  }
+  16%{
+    content: 'Design|';
+  }
+  18%{
+    content: 'Des|';
+  }
+  20%{
+    content: 'De|';
+  }
+  22%{
+    content: 'Dev|';
+  }
+  24%{
+    content: 'Deve|';
+  }
+  26%{
+    content: 'Devel|';
+  }
+  28%{
+    content: 'Develo|';
+  }
+  30%{
+    content: 'Developer|';
+  }
+  32%{
+    content: 'Developer|';
+  }
+  34%{
+    content: 'Developer|';
+  }
+  36%{
+    content: 'Dev|';
+  }
+  38%{
+    content: '|';
+  }
+  40%{
+    content: 'F|';
+  }
+  42%{
+    content: 'Fr|';
+  }
+  44%{
+    content: 'Fre|';
+  }
+  46%{
+    content: 'Free|';
+  }
+  48%{
+    content: 'Freel|';
+  }
+  50%{
+    content: 'Freela|';
+  }
+  52%{
+    content: 'Freelan|';
+  }
+  54%{
+    content: 'Freelanc|';
+  }
+  56%{
+    content: 'Freelance|';
+  }
+  58%{
+    content: 'Freelancer|';
+  }
+  60%{
+    content: 'Freelancer|';
+  }
+  62%{
+    content: 'Freelancer|';
+  }
+  64%{
+    content: 'Freelan|';
+  }
+  66%{
+    content: 'Fre|';
+  }
+  68%{
+    content: '|';
+  }
+  70%{
+    content: '|';
+  }
+  72%{
+    content: 'P|';
+  }
+  74%{
+    content: 'Pho|';
+  }
+  76%{
+    content: 'Photo|';
+  }
+  78%{
+    content: 'Photog|';
+  }
+  80%{
+    content: 'Photogra|';
+  }
+  82%{
+    content: 'Photograp|';
+  }
+  84%{
+    content: 'Photograph|';
+  }
+  86%{
+    content: 'Photographe|';
+  }
+  88%{
+    content: 'Photographer|';
+  }
+  90%{
+    content: 'Photographer|';
+  }
+  92%{
+    content: 'Photographer|';
+  }
+  94%{
+    content: 'Photogra|';
+  }
+  96%{
+    content: 'Photog|';
+  }
+  98%{
+    content: 'Pho|';
+  }
+  100%{
+    content: '|';
+  }
+
+}
+
+
+/* ------------ about me ------------ */
+
+.about-me .my-card {
+  box-shadow: 0px 8px 18px 3px rgba(0, 0, 0, 0.1);
+}
+
+.progress,
+.progress-stacked {
+  border-radius: 0;
+  height: 12px;
+}
+
+.progress {
+  margin-top: -10px;
+}
+
+.about-me .right-part h5{
+  position: relative;
+}
+
+.about-me .right-part h5::before{
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: rgb(0, 120, 255);
+  position: absolute;
+  bottom: -12px;
+}
+
+
+/* ------------ Services ------------ */
+.services .my-card {
+  box-shadow: 0px 5px 10px 2px rgba(102, 102, 102, 0.1);
+}
+
+.my-card .icon-container {
+  border: 10px solid rgb(0, 120, 255);
+  display: inline-block;
+  padding: 30px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 15px;
+  transition: 0.2s;
+}
+
+.my-card:hover .icon-container {
+  background-color: rgb(0, 120, 255);
+  color: white;
+  border-color: #cde1f8;
+}
+
+.services h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.services .sercives-content > p {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.services .sercives-content > p::before {
+  content: "";
+  width: 40px;
+  height: 5px;
+  background-color: rgb(0, 120, 255);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/* ------------ stats ------------ */
+
+.stats {
+  background-image: linear-gradient(
+      rgba(0, 90, 194, 0.7),
+      rgba(0, 90, 194, 0.7)
+    ),
+    url(images/post-3.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.stats-parent {
+  padding: 120px 60px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.stats-parent .unit{
+  width: 120px;
+}
+
+.stats .icon-container {
+  border: 10px solid rgb(255, 255, 255);
+  display: inline-block;
+  padding: 16px;
+  border-radius: 50%;
+  aspect-ratio: 1 / 1;
+  margin-bottom: 8px;
+  transition: 0.2s;
+}
+
+
+@media screen and (max-width: 576px) {
+  .stats-parent {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .stats-parent .unit{
+    width: 200px;
+    margin-bottom: 30px;
+  }
+}
+/* ------------ portfolio ------------ */
+
+.portfolio h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.portfolio .portfolio-content > p {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.portfolio .portfolio-content > p::before {
+  content: "";
+  width: 40px;
+  height: 5px;
+  background-color: rgb(0, 120, 255);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.portfolio .card img {
+  transition: 0.8s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+}
+
+.portfolio .card:hover img {
+  scale: 120%;
+}
+
+.modal {
+  --bs-modal-width: 1000px;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* ------------ slider ------------ */
+
+.slider-section {
+  background-image: linear-gradient(
+      rgba(73,153,238, 0.7),  
+      rgba(73,153,238, 0.7)
+    ),
+    url(images/peakpx.jpg);
+  padding: 160px 0px;
+}
+
+.carousel-indicators {
+  position: relative;
+}
+.carousel-indicators [data-bs-target] {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+/* ------------ blog ------------ */
+
+.blog {
+  margin-bottom: 100px;
+}
+
+.blog h2 {
+  font-size: 48px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.blog .blog-content > p {
+  margin-bottom: 80px;
+  position: relative;
+}
+
+.blog .blog-content > p::before {
+  content: "";
+  width: 40px;
+  height: 5px;
+  background-color: rgb(0, 120, 255);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.blog a:hover h5,
+.blog a:hover span {
+  transition: 0.5s;
+  position: relative;
+}
+
+.blog a:hover h5,
+.blog a:hover span {
+  color: rgb(0, 140, 255);
+}
+
+.my-tag{
+  position: relative;
+}
+
+
+.blog .my-tag::before {
+  content: "Web Design";
+  width: 105px;
+  height: 21px;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 120, 255);
+  color: white;
+  text-align: center;
+  border-radius: 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+.blog .my-tag::before {
+  content: "Travel";
+}
+
+.blog .my-img {
+  width: 34px;
+}
+
+
+
+/* ------------ contact ------------ */
+
+.contact{
+  background-image: linear-gradient(
+    rgba(0, 90, 194, 0.9),
+    rgba(0, 90, 194, 0.9)
+  ),
+  url(images/peakpx.jpg);
+padding: 160px 0px;
+}
+
+.contact h5{
+  position: relative;
+}
+
+.contact h5::before{
+  content: '';
+  width: 100px;
+  height: 3px;
+  background-color: rgb(0, 120, 255);
+  position: absolute;
+  bottom: -12px;
+}
+
+
+
+.social-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 3px solid rgb(0, 120, 255);
+  border-radius: 50%;
+  width: 50px;
+  aspect-ratio: 1/1;
+  transition: .3s;
+}
+
+.social-icon i {
+  transition: .3s;
+
+}
+
+
+.social-icon:hover{
+  background-color: rgb(0, 120, 255);
+  border-color: rgb(208, 230, 255);
+}
+
+.social-icon:hover i{
+  color: white;
+}
+
+
+@media screen and (max-width: 576px) {
+  .slider-section,
+  .contact {
+    padding: 80px 20px;
+  }
+}
+
+
+/* ------------ footer ------------ */
+
+footer{
+  background-color: rgb(0,95,204);
+}
