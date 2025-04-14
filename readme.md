@@ -1,6 +1,6 @@
-# My Portfolio Website
+# Portfolio Website
 
-This is a portfolio website template that built with HTML, CSS, and Bootstrap as a framework. It includes sections like About Me, Services, Portfolio, Blog, and Contact.
+This is a portfolio website that built with HTML, CSS, and Bootstrap as a framework. It includes sections like About Me, Services, Portfolio, Blog, and Contact.
 
 ##  Built With
 
